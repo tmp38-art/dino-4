@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Rex Dino Runner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="header">
+      <div class="score-board">
+        <span>HI <span id="high-score">00000</span></span>
+        <span id="current-score">00000</span>
+      </div>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="260"></canvas>
+
+    <div id="game-over-screen" class="overlay hidden">
+      <div class="game-over-card">
+        <h2>GAME OVER</h2>
+        <p>Press <strong>Space</strong>, <strong>Up Arrow</strong>, or Click to Restart</p>
+        <button id="restart-btn" class="btn">Play Again</button>
+      </div>
+    </div>
+
+    <div id="start-screen" class="overlay">
+      <div class="start-card">
+        <h1>🦖 Dino Runner</h1>
+        <p>Press <strong>Space</strong>, <strong>↑</strong>, or <strong>Tap/Click</strong> to Jump</p>
+        <p class="duck-hint">Press <strong>↓</strong> (Down Arrow) to Duck!</p>
+        <button id="start-btn" class="btn">Start Game</button>
+      </div>
+    </div>
+
+    <div class="controls-info">
+      <span>🔊 Audio: Enabled (Web Audio API)</span>
+      <span>Controls: Space / Up / Down / Click</span>
+    </div>
+  </div>
+
+  <script src="audio.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
+
